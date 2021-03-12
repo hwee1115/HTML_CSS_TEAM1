@@ -93,6 +93,15 @@ header{
     text-align: center;
 }
 
+.mypage a{
+    color:black;
+}
+
+.mypage a:hover{
+    color:#FF3357;
+    text-decoration: none;
+}
+
 .mypage-icon{
     padding-left: 300px;
     margin-right: 85px;
@@ -110,10 +119,18 @@ header{
 }
 
 .cart{
-
     margin-top: 50px;
     font-size: 1.5rem;
     text-align: center;
+}
+
+.cart a{
+    color:black;
+}
+
+.cart a:hover{
+    color:#FF3357;
+    text-decoration: none;
 }
 
 .cart-text{
@@ -387,6 +404,71 @@ section{
     color:inherit;
     line-height: 1.5rem;
 }
+
+
+.footer-container1-contents{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+    
+}
+
+.footer-container1-text{
+    color:black;
+}
+
+
+.footer-container2-contents{
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    
+}
+
+.footer-container2-text{
+    color:black;
+    display: flex;
+    font-size: 1.5em;
+    flex-basis: 50%;
+}
+
+.fa-headset{
+    margin-right: 5px;
+    
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5em;
+    flex-basis: 50%;
+}
+
+.footer-container2-downtext{
+    color:black;
+    display: flex;
+    font-size: 1em;
+    flex-basis: 100%;
+}
+
+.open-time{
+    color:black;
+    position: absolute;
+    top:50px;
+    
+}
+
+.footer-etc{
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    font-size: 0.4em;
+}
+
 
 
 
