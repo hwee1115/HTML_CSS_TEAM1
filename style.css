@@ -103,14 +103,14 @@ header{
 }
 
 .mypage-icon{
-    padding-left: 300px;
-    margin-right: 85px;
+    padding-left: 270px;
+    margin-right: 75px;
     font-size: 1.5rem;
 }
 
 .mypage-text{
-    padding-left: 300px;
-    margin-right: 85px;
+    padding-left: 270px;
+    margin-right: 75px;
     height:40px;
     display: block;
     font-size: 0.8rem;
@@ -164,7 +164,9 @@ section{
     
 }
 
-
+.nav-link:hover{
+    background-color: #FF3357;
+}
 
 .navbar-nav{
     padding: 0;
@@ -175,11 +177,13 @@ section{
 .nav-item{
     margin:0 20px;
     color: black;
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Black Han Sans', sans-serif;
 }
 
-
+.dropdown-item:hover{
+    color:#FF3357;
+}
 
 
 .d-block{
@@ -212,6 +216,16 @@ section{
     padding: 1rem 0;
     margin-top:15px;
     overflow: none;
+    position: relative;
+}
+
+.fa-chevron-circle-right{
+    position: absolute;
+    top:105px;
+    left:1110px;
+    font-size: 35px;
+    color:black;
+    cursor:pointer;
 }
 
 .new-goods{
@@ -361,7 +375,7 @@ section{
     padding:0.5rem 1rem 1rem 1rem;
 }
 
-.class-skill{
+.class-box{
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -375,7 +389,7 @@ section{
 .class-format{
     font-size: 0.9em;
     color:#FF3357;
-    background-color: #949393;
+    background-color: #fff;
     padding:0.2rem;
 }
 
@@ -403,6 +417,37 @@ section{
     font-size: 0.9rem;
     color:inherit;
     line-height: 1.5rem;
+}
+
+footer{
+    bottom: 0!important;
+    position: 0 !important;
+    margin: auto;
+}
+.vl {
+  border-left: 1px solid #ffffff;
+  margin-top: 20px;
+  height: 50px;
+}
+.col-sm-3{
+    max-width: 24% !important;
+    margin: auto;
+    margin-top:20px;
+}
+.col-sm-4 {
+    float: left;
+}
+.col-6 {
+    float: left;
+    font-size:0.8em;
+    padding: 0;
+}
+
+.rows2 {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 100%;
 }
 
 
