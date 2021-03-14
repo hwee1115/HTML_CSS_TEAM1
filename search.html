@@ -1,0 +1,544 @@
+<!--헤더시작-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f1def33959.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <div class="head-container">
+                <div class="head-brand">
+                  <a href="main.html">
+                    <img src="img/logo7.png" alt="logo">
+                  </a>
+                </div>
+                <div class="head-searchbar">
+                    <input type="text" placeholder="검색어를 입력하세요." class="searchTab">
+                    <button class="searchButton">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="header-sideBar">
+                    <div class="mypage">
+                      <a href="login.html">
+                        <i class="fas fa-user mypage-icon"></i>
+                        <span class="mypage-text">MY</span>
+                      </a>
+                    </div>
+                    <div class="cart">
+                      <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-text">장바구니</span>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="main-container">
+            <div class="nav-inner">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white" style="padding: .5rem 0;">
+                    <div class="container-fluid" style="padding-left: 0;">
+                      <ul class="navbar-nav">
+                        <li class="nav-item dropdown" style="margin-left: 0;">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="category">카테고리</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="search.html">티셔츠</a>
+                              <a class="dropdown-item" href="search.html">후드티</a>
+                              <a class="dropdown-item" href="search.html">패딩/코트</a>
+                              <a class="dropdown-item" href="search.html">원피스</a>
+                              <a class="dropdown-item" href="search.html">올인원</a>
+                             
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="new.html">신규</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="rank.html">랭킹</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="rec.html">추천</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="cs1.html">고객센터</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </section>
+    <!--헤더 끝-->
+
+    <!--검색페이지 시작-->
+
+    <!--회색 바-->
+    <div class="header2"> 
+        <div class="inner">
+            <div  style="font-size: 0.85em; padding-top: 5px;">홈 > 검색</div> 
+        </div>
+     </div>
+
+    <div class="inner">
+        <!--검색페이지 컨테이너-->
+        <div class="container-fluid ">
+            <div class="row">
+                <!--검색옵션 컨테이너-->
+                <div class="col-md-2  " >
+                    <!--검색옵션 텍스트-->
+                    <h5 class="font-weight-bold strong" style="margin: 15% 0; ">검색옵션</h5>
+                    <!--카테고리 드랍다운-->
+                    <div class="dropdown" >
+                        <h5 class="nav-link2 dropdown-toggle border-bottom" style="color: gray; padding-top: 5%; padding-bottom: 10%;" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            카테고리
+                        </h5>
+                        <div class="collapse" id="collapseExample">
+                            <h6 class="nav-link2 active" input type="button" style="padding: 5% 10%" href="#">전체</h6>
+                            <!--세부 카테고리 드랍다운-->
+                            <div class="dropdown" >
+                                <h6  class="nav-link2 dropdown-toggle" style="padding: 5% 10%" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                                        의류/악세서리
+                                </h6>
+                                <div class="collapse" id="collapseExample2">
+                                    <h7 class="nav-link2" input type="button" style="display:block; padding: 5% 20%" href="#">전체</h7>
+                                    <h7 class="nav-link2" input type="button" style="display:block; padding: 5% 20%" href="#">티셔츠</h7>
+                                    <h7 class="nav-link2" input type="button" style="display:block; padding: 5% 20%" href="#">후드티</h7>
+                                    <h7 class="nav-link2" input type="button" style="display:block; padding: 5% 20%" href="#">패딩/코트</h7>
+                                    <h7 class="nav-link2" input type="button" style="display:block; padding: 5% 20%" href="#">원피스</h7>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--구매결과 컨테이너--> 
+                <class class="col-md-10 border" style="padding: 0 0;" >
+                    <!--검색결과 설명--> 
+                    <div class="border-bottom" style="font:bold; margin: 1%;">
+                        <h5><strong>'후드'</strong>에 대한 검색결과</h5>
+                    </div>
+                    <!--상품 개수--> 
+                    <div class="border-bottom" style="padding:1% 0; margin: 1%; color: gray;">
+                        <h7><strong>38</strong>개의 상품</h7>
+                    </div>
+                    <!--상품 목록 컨테이너--> 
+                    <div class="container">
+                        <!--상품 목록행 1--> 
+                        <div class="row">
+                            <!--상품1--> 
+                            <div class="col-3" OnClick="location.href ='detail.html'" style="cursor:pointer; margin: 0px; text-align: center; padding: 5px 5px;  ">
+                                <figure class="figure " style="text-align: left; margin:0 0; height: 90%; width: 90%; ">
+                                    <!--상품 사진-->
+                                    <img src="image/검색결과/플로트 콤비 후드 옐로우핫핑크_29,000원.PNG" width="100%" >
+                                    <!--상품명-->
+                                    <figcaption class="figure-caption ">플로트 콤비 후드 옐로우핫핑크</figcaption>
+                                    <!--상품 가격-->
+                                    <figcaption class="figure-caption font-weight-bold"  >29,000원</figcaption>
+                                    <!--상품 별점-->
+                                    <figcaption class="figure-caption  ">
+                                        <img src="image/Star.PNG" height="10px" /><img src="image/Star.PNG" height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px">
+                                        (10)
+                                    </figcaption>
+                                    
+                                </figure>
+                            </div>
+                            <!--상품2--> 
+                            <div class="col-3  "OnClick="location.href ='http://URL주소'" style="cursor:pointer;margin: 0px; text-align: center; padding: 5px 5px; ">
+                                <figure class="figure " style="text-align: left;margin:0 0; height: 90%; width: 90%; ">
+                                    <!--상품 사진-->
+                                    <img src="image/검색결과/플로트 스탠다드 후드 핑크_26,000원.PNG" width="100%" >
+                                    <!--상품명-->
+                                    <figcaption class="figure-caption ">플로트 스탠다드 후드 핑크</figcaption>
+                                    <!--상품 가격-->
+                                    <figcaption class="figure-caption font-weight-bold">26,000원</figcaption>
+                                    <!--상품 별점-->
+                                    <figcaption class="figure-caption  ">
+                                        <img src="image/Star.PNG" height="10px" /><img src="image/Star.PNG" height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px">
+                                        (10)
+                                    </figcaption>
+                                    
+                                </figure>
+                            </div>
+                            <!--상품3--> 
+                            <div class="col-3  " OnClick="location.href ='http://URL주소'" style="cursor:pointer;"margin: 0px; text-align: center; padding: 5px 5px; ">
+                                <figure class="figure " style="text-align: left; margin:0 0; height: 90%; width: 90%; ">
+                                    <!--상품 사진-->
+                                    <img src="image/검색결과/이츠독 플러피 기모 후드 점퍼_26,000~31,000원.PNG" width="100%" >
+                                    <!--상품명-->
+                                    <figcaption class="figure-caption ">이츠독 플러피 기모 후드 점퍼</figcaption>
+                                    <!--상품 가격-->
+                                    <figcaption class="figure-caption font-weight-bold">26,000원 ~31,000원</figcaption>
+                                    <!--상품 별점-->
+                                    <figcaption class="figure-caption  ">
+                                        <img src="image/Star.PNG" height="10px" /><img src="image/Star.PNG" height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px">
+                                        (10)
+                                    </figcaption>
+                                    
+                                </figure>
+                            </div>
+                            <!--상품4--> 
+                            <div class="col-3  " OnClick="location.href ='http://URL주소'" style="cursor:pointer;"margin: 0px; text-align: center; padding: 5px 5px; ">
+                                <figure class="figure " style="text-align: left; margin:0 0; height: 90%; width: 90%; ">
+                                    <!--상품 사진-->
+                                    <img src="image/검색결과/이츠독 버디 슈퍼 보아 후드티 블루_32,000원 ~ 37,000원.PNG" width="100%" >
+                                    <!--상품명-->
+                                    <figcaption class="figure-caption ">이츠독 버디 슈퍼 후드티</figcaption>
+                                    <!--상품 가격-->
+                                    <figcaption class="figure-caption font-weight-bold">32,000원 ~ 37,000원</figcaption>
+                                    <!--상품 별점-->
+                                    <figcaption class="figure-caption  ">
+                                        <img src="image/Star.PNG" height="10px" /><img src="image/Star.PNG" height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px">
+                                        (10)
+                                    </figcaption>
+                                    
+                                </figure>
+                            </div>
+                        </div>
+
+                        <!--상품 목록행 2--> 
+                        <div class="row">
+                            <!--상품1--> 
+                            <div class="col-3" OnClick="location.href ='http://URL주소'" style="cursor:pointer;"margin: 0px; text-align: center; padding: 5px 5px; ">
+                                <figure class="figure " style="text-align: left; margin:0 0; height: 90%; width: 90%; ">
+                                    <!--상품 사진-->
+                                    <img src="image/검색결과/플로트 콤비 후드 옐로우핫핑크_29,000원.PNG" width="100%" >
+                                    <!--상품명-->
+                                    <figcaption class="figure-caption ">플로트 콤비 후드 옐로우핫핑크</figcaption>
+                                    <!--상품 가격-->
+                                    <figcaption class="figure-caption font-weight-bold"  >29,000원</figcaption>
+                                    <!--상품 별점-->
+                                    <figcaption class="figure-caption  ">
+                                        <img src="image/Star.PNG" height="10px" /><img src="image/Star.PNG" height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px">
+                                        (10)
+                                    </figcaption>
+                                    
+                                </figure>
+                            </div>
+                            <!--상품2--> 
+                            <div class="col-3  " OnClick="location.href ='http://URL주소'" style="cursor:pointer;"margin: 0px; text-align: center; padding: 5px 5px; ">
+                                <figure class="figure " style="text-align: left;margin:0 0; height: 90%; width: 90%; ">
+                                    <!--상품 사진-->
+                                    <img src="image/검색결과/플로트 스탠다드 후드 핑크_26,000원.PNG" width="100%" >
+                                    <!--상품명-->
+                                    <figcaption class="figure-caption ">플로트 스탠다드 후드 핑크</figcaption>
+                                    <!--상품 가격-->
+                                    <figcaption class="figure-caption font-weight-bold">26,000원</figcaption>
+                                    <!--상품 별점-->
+                                    <figcaption class="figure-caption  ">
+                                        <img src="image/Star.PNG" height="10px" /><img src="image/Star.PNG" height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px">
+                                        (10)
+                                    </figcaption>
+                                    
+                                </figure>
+                            </div>
+                            <!--상품3--> 
+                            <div class="col-3  " OnClick="location.href ='http://URL주소'" style="cursor:pointer;"margin: 0px; text-align: center; padding: 5px 5px; ">
+                                <figure class="figure " style="text-align: left; margin:0 0; height: 90%; width: 90%; ">
+                                    <!--상품 사진-->
+                                    <img src="image/검색결과/이츠독 플러피 기모 후드 점퍼_26,000~31,000원.PNG" width="100%" >
+                                    <!--상품명-->
+                                    <figcaption class="figure-caption ">이츠독 플러피 기모 후드 점퍼</figcaption>
+                                    <!--상품 가격-->
+                                    <figcaption class="figure-caption font-weight-bold">26,000원 ~31,000원</figcaption>
+                                    <!--상품 별점-->
+                                    <figcaption class="figure-caption  ">
+                                        <img src="image/Star.PNG" height="10px" /><img src="image/Star.PNG" height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px">
+                                        (10)
+                                    </figcaption>
+                                    
+                                </figure>
+                            </div>
+                            <!--상품4--> 
+                            <div class="col-3  " OnClick="location.href ='http://URL주소'" style="cursor:pointer;"margin: 0px; text-align: center; padding: 5px 5px; ">
+                                <figure class="figure " style="text-align: left; margin:0 0; height: 90%; width: 90%; ">
+                                    <!--상품 사진-->
+                                    <img src="image/검색결과/이츠독 버디 슈퍼 보아 후드티 블루_32,000원 ~ 37,000원.PNG" width="100%" >
+                                    <!--상품명-->
+                                    <figcaption class="figure-caption ">이츠독 버디 슈퍼 후드티</figcaption>
+                                    <!--상품 가격-->
+                                    <figcaption class="figure-caption font-weight-bold">32,000원 ~ 37,000원</figcaption>
+                                    <!--상품 별점-->
+                                    <figcaption class="figure-caption  ">
+                                        <img src="image/Star.PNG" height="10px" /><img src="image/Star.PNG" height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px">
+                                        (10)
+                                    </figcaption>
+                                    
+                                </figure>
+                            </div>
+                        </div>
+
+                        
+                        <!--상품 목록행 3--> 
+                        <div class="row">
+                            <!--상품1--> 
+                            <div class="col-3" OnClick="location.href ='http://URL주소'" style="cursor:pointer;"margin: 0px; text-align: center; padding: 5px 5px; ">
+                                <figure class="figure " style="text-align: left; margin:0 0; height: 90%; width: 90%; ">
+                                    <!--상품 사진-->
+                                    <img src="image/검색결과/플로트 콤비 후드 옐로우핫핑크_29,000원.PNG" width="100%" >
+                                    <!--상품명-->
+                                    <figcaption class="figure-caption ">플로트 콤비 후드 옐로우핫핑크</figcaption>
+                                    <!--상품 가격-->
+                                    <figcaption class="figure-caption font-weight-bold"  >29,000원</figcaption>
+                                    <!--상품 별점-->
+                                    <figcaption class="figure-caption  ">
+                                        <img src="image/Star.PNG" height="10px" /><img src="image/Star.PNG" height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px">
+                                        (10)
+                                    </figcaption>
+                                    
+                                </figure>
+                            </div>
+                            <!--상품2--> 
+                            <div class="col-3  " OnClick="location.href ='http://URL주소'" style="cursor:pointer;"margin: 0px; text-align: center; padding: 5px 5px; ">
+                                <figure class="figure " style="text-align: left;margin:0 0; height: 90%; width: 90%; ">
+                                    <!--상품 사진-->
+                                    <img src="image/검색결과/플로트 스탠다드 후드 핑크_26,000원.PNG" width="100%" >
+                                    <!--상품명-->
+                                    <figcaption class="figure-caption ">플로트 스탠다드 후드 핑크</figcaption>
+                                    <!--상품 가격-->
+                                    <figcaption class="figure-caption font-weight-bold">26,000원</figcaption>
+                                    <!--상품 별점-->
+                                    <figcaption class="figure-caption  ">
+                                        <img src="image/Star.PNG" height="10px" /><img src="image/Star.PNG" height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px">
+                                        (10)
+                                    </figcaption>
+                                    
+                                </figure>
+                            </div>
+                            <!--상품3--> 
+                            <div class="col-3  " OnClick="location.href ='http://URL주소'" style="cursor:pointer;"margin: 0px; text-align: center; padding: 5px 5px; ">
+                                <figure class="figure " style="text-align: left; margin:0 0; height: 90%; width: 90%; ">
+                                    <!--상품 사진-->
+                                    <img src="image/검색결과/이츠독 플러피 기모 후드 점퍼_26,000~31,000원.PNG" width="100%" >
+                                    <!--상품명-->
+                                    <figcaption class="figure-caption ">이츠독 플러피 기모 후드 점퍼</figcaption>
+                                    <!--상품 가격-->
+                                    <figcaption class="figure-caption font-weight-bold">26,000원 ~31,000원</figcaption>
+                                    <!--상품 별점-->
+                                    <figcaption class="figure-caption  ">
+                                        <img src="image/Star.PNG" height="10px" /><img src="image/Star.PNG" height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px">
+                                        (10)
+                                    </figcaption>
+                                    
+                                </figure>
+                            </div>
+                            <!--상품4--> 
+                            <div class="col-3  " OnClick="location.href ='http://URL주소'" style="cursor:pointer;"margin: 0px; text-align: center; padding: 5px 5px; ">
+                                <figure class="figure " style="text-align: left; margin:0 0; height: 90%; width: 90%; ">
+                                    <!--상품 사진-->
+                                    <img src="image/검색결과/이츠독 버디 슈퍼 보아 후드티 블루_32,000원 ~ 37,000원.PNG" width="100%" >
+                                    <!--상품명-->
+                                    <figcaption class="figure-caption ">이츠독 버디 슈퍼 후드티</figcaption>
+                                    <!--상품 가격-->
+                                    <figcaption class="figure-caption font-weight-bold">32,000원 ~ 37,000원</figcaption>
+                                    <!--상품 별점-->
+                                    <figcaption class="figure-caption  ">
+                                        <img src="image/Star.PNG" height="10px" /><img src="image/Star.PNG" height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px">
+                                        (10)
+                                    </figcaption>
+                                    
+                                </figure>
+                            </div>
+                        </div>
+
+
+                        <!--상품 목록행 4--> 
+                        <div class="row">
+                            <!--상품1--> 
+                            <div class="col-3"OnClick="location.href ='http://URL주소'" style="cursor:pointer;"margin: 0px; text-align: center; padding: 5px 5px; ">
+                                <figure class="figure " style="text-align: left; margin:0 0; height: 90%; width: 90%; ">
+                                    <!--상품 사진-->
+                                    <img src="image/검색결과/플로트 콤비 후드 옐로우핫핑크_29,000원.PNG" width="100%" >
+                                    <!--상품명-->
+                                    <figcaption class="figure-caption ">플로트 콤비 후드 옐로우핫핑크</figcaption>
+                                    <!--상품 가격-->
+                                    <figcaption class="figure-caption font-weight-bold"  >29,000원</figcaption>
+                                    <!--상품 별점-->
+                                    <figcaption class="figure-caption  ">
+                                        <img src="image/Star.PNG" height="10px" /><img src="image/Star.PNG" height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px">
+                                        (10)
+                                    </figcaption>
+                                    
+                                </figure>
+                            </div>
+                            <!--상품2--> 
+                            <div class="col-3  " OnClick="location.href ='http://URL주소'" style="cursor:pointer;"margin: 0px; text-align: center; padding: 5px 5px; ">
+                                <figure class="figure " style="text-align: left;margin:0 0; height: 90%; width: 90%; ">
+                                    <!--상품 사진-->
+                                    <img src="image/검색결과/플로트 스탠다드 후드 핑크_26,000원.PNG" width="100%" >
+                                    <!--상품명-->
+                                    <figcaption class="figure-caption ">플로트 스탠다드 후드 핑크</figcaption>
+                                    <!--상품 가격-->
+                                    <figcaption class="figure-caption font-weight-bold">26,000원</figcaption>
+                                    <!--상품 별점-->
+                                    <figcaption class="figure-caption  ">
+                                        <img src="image/Star.PNG" height="10px" /><img src="image/Star.PNG" height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px">
+                                        (10)
+                                    </figcaption>
+                                    
+                                </figure>
+                            </div>
+                            <!--상품3--> 
+                            <div class="col-3  " OnClick="location.href ='http://URL주소'" style="cursor:pointer;"margin: 0px; text-align: center; padding: 5px 5px; ">
+                                <figure class="figure " style="text-align: left; margin:0 0; height: 90%; width: 90%; ">
+                                    <!--상품 사진-->
+                                    <img src="image/검색결과/이츠독 플러피 기모 후드 점퍼_26,000~31,000원.PNG" width="100%" >
+                                    <!--상품명-->
+                                    <figcaption class="figure-caption ">이츠독 플러피 기모 후드 점퍼</figcaption>
+                                    <!--상품 가격-->
+                                    <figcaption class="figure-caption font-weight-bold">26,000원 ~31,000원</figcaption>
+                                    <!--상품 별점-->
+                                    <figcaption class="figure-caption  ">
+                                        <img src="image/Star.PNG" height="10px" /><img src="image/Star.PNG" height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px">
+                                        (10)
+                                    </figcaption>
+                                    
+                                </figure>
+                            </div>
+                            <!--상품4--> 
+                            <div class="col-3  " OnClick="location.href ='http://URL주소'" style="cursor:pointer;"margin: 0px; text-align: center; padding: 5px 5px; ">
+                                <figure class="figure " style="text-align: left; margin:0 0; height: 90%; width: 90%; ">
+                                    <!--상품 사진-->
+                                    <img src="image/검색결과/이츠독 버디 슈퍼 보아 후드티 블루_32,000원 ~ 37,000원.PNG" width="100%" >
+                                    <!--상품명-->
+                                    <figcaption class="figure-caption ">이츠독 버디 슈퍼 후드티</figcaption>
+                                    <!--상품 가격-->
+                                    <figcaption class="figure-caption font-weight-bold">32,000원 ~ 37,000원</figcaption>
+                                    <!--상품 별점-->
+                                    <figcaption class="figure-caption  ">
+                                        <img src="image/Star.PNG" height="10px" /><img src="image/Star.PNG" height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px"><img src="image/Star.PNG"height="10px">
+                                        (10)
+                                    </figcaption>
+                                    
+                                </figure>
+                            </div>
+                        </div>
+
+
+                        
+                        <!--상품 목록 순서--> 
+                        <div class="container d-flex justify-content-center " style="margin-top:10%; width:100%; height: 70px; "> 
+                            <nav>
+                                <ul class="navbar-nav navbar-expand-lg " style="height:50% ;" >
+                                    <li class="nav-item">
+                                        <button class="nav-link3"  href="#">&lt;</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link3 active"  style="background-color:  gainsboro;" href="#">1</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link3"  href="#">2</button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button class="nav-link3"  href="#">&gt;</button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--푸터-->
+    <footer style="color: #ffffff; margin-top: 5%;">
+        <div class="container-fluid" style = "background-color: #FF3357; margin-left : 0px; margin-right : 0px; height:90px">
+            <div class="inner">
+              <div class="row">
+                <div class="col-sm-3">
+                    <div class="col-sm-4">
+                        <img src="image/footer/dog.png" width="50">
+                    </div>
+                    <div class="col-6">
+                        <a style="width:400px">DOGSINSA가<br>만들어낸 의류</a>
+                    </div>
+                </div>
+                <div class="vl"></div>
+                
+                <div class="col-sm-3">
+                    <div class="col-sm-4">
+                        <img src="image/footer/dogc.png" width="50">
+                    </div>
+                    <div class="col-6">
+                      <a>깨끗하고 안전한<br>재질로 만든 옷</a>
+                    </div>
+                </div>
+                <div class="vl"></div>
+                
+                <div class="col-sm-3">
+                    <div class="col-sm-4">
+                        <img src="image/footer/truck.png" width="50">
+                    </div>
+                    <div class="col-6">
+                      <a style="width: 400px;">저녁 6시 이전<br>주문 시 오늘 출발</a>
+                    </div>
+                </div>
+                <div class="vl"></div>
+    
+                <div class="col-sm-3">
+                    <div class="col-sm-4">
+                        <img src="image/footer/hand.png" width="50">
+                    </div>
+                    <div class="col-6">
+                        <a>3만원 이상 구매시<br>무료배송</a>
+                    </div>
+                </div>
+               </div>
+            </div>
+          </div>
+          </footer>
+        <div class="footer-container1">
+          <div class="inner">
+            <div class="footer-container1-contents">
+              <div class="footer-container1-text">
+                회사소개 | 입점문의 | 이용약관 | 개인정보처리
+              </div> 
+    
+            </div>
+          </div>
+          <hr style="margin:0;"/>
+        </div>
+        <div class="footer-container2">
+          <div class="inner">
+            <div class="footer-container2-contents">
+              <div class="footer-container2-text">
+                <i class="fas fa-headset"></i>
+                010-5319-3079
+              </div> 
+              <div class="footer-logo">
+                <img src="image/logo.png" alt="logo">
+              </div>
+              <div class="footer-container2-downtext">
+                <div class="open-time">평일: 09:00 ~ 18:00 / 주말 · 공휴일: 휴무</div>
+                <div class="footer-etc">
+                  (주)더존비즈온 | 대표이사: DOGSINSA | 사업자등록번호: 127-8-358</br>
+                  개인정보보호책임자: 봉상근 | 주소: 서울시 동작구 상도로</br>
+                  팩스: 02-555-5585 | 이메일: nwk12@naver.com
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="margin:0;"/>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+    
+    <link rel="stylesheet" href="common/bootstrap-4.6.0/css/bootstrap.min.css">
+    <script src="common/js/jquery-3.5.1.min.js"></script>
+    <script src="common/bootstrap-4.6.0/js/bootstrap.bundle.min.js"></script>
+    <script src="common/bootstrap-4.6.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/f1def33959.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div class="head-container">
+                <div class="head-brand">
+                  <a href="main.html">
+                    <img src="img/logo7.png" alt="logo">
+                  </a>
+                </div>
+                <div class="head-searchbar">
+                    <input type="text" placeholder="검색어를 입력하세요." class="searchTab">
+                    <button class="searchButton">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="header-sideBar">
+                    <div class="mypage">
+                      <a href="login.html">
+                        <i class="fas fa-user mypage-icon"></i>
+                        <span class="mypage-text">MY</span>
+                      </a>
+                    </div>
+                    <div class="cart">
+                      <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-text">장바구니</span>
+                      </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="main-container">
+            <div class="nav-inner">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white" style="padding: .5rem 0;">
+                    <div class="container-fluid" style="padding-left: 0;">
+                      <ul class="navbar-nav">
+                        <li class="nav-item dropdown" style="margin-left: 0;">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="category">카테고리</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="search.html">티셔츠</a>
+                              <a class="dropdown-item" href="search.html">후드티</a>
+                              <a class="dropdown-item" href="search.html">패딩/코트</a>
+                              <a class="dropdown-item" href="search.html">원피스</a>
+                              <a class="dropdown-item" href="search.html">올인원</a>
+                             
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="new.html">신규</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="rank.html">랭킹</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="rec.html">추천</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="cs1.html">고객센터</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </section>
+        <style type="text/css">
+            *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            } 
+            
+            .start{
+            background-color: #e9ecef;
+            }
+            
+            .info{
+                margin: 20px auto 0;
+                padding: 24px 120px 24px 40px;
+                border-radius: 8px;
+                border: 1px solid #e9ecef;
+                flex-direction: row;
+            }
+            .photo{
+                float:left;
+                padding-right: 15px;
+            }   
+            .col-2{
+                
+                text-align: left;
+                font-size: 12px;
+            }
+    
+            .header2 {
+                padding-left: 25px;
+                background-color: rgb(244, 244, 245);
+                height: 36px;
+                align-content: center;            
+          }
+    
+            
+            .list-group-item-action{
+                color: #222;
+                background-color: white;
+                border-color: white;
+            }
+    
+            .list-group-item-action:focus{
+                color: red;
+                background-color:  white;
+                border-color:  white;
+            }
+    
+            .list-group-item-action:hover{
+             
+             color: red;
+             background-color: white;
+             border-color: white;
+            }
+        
+            .list-group-item.active{
+                color:red;
+                background-color: white;
+                border-color:#fff;
+            }
+        
+            /* .table{
+                background-color: white;
+                border: 1px thin rgb(138, 138, 146);
+                font-size: 1em;
+                font-family: Noto Sans KR, sans-serif;
+                font-weight: 800;
+            }
+            
+            
+            .table .thead-light th {
+                
+                background-color: rgba(244, 244, 245, 160);
+                border-color: rgba(244, 244, 245, 160);
+            }
+
+            
+            thead tr{
+                text-align: center;
+            } 
+            .table td, .table th {
+                padding: .75rem;
+                vertical-align: middle;
+                border-top: 1px solid #dee2e6;
+                border-right: 1px solid #dee2e6;
+            }
+            .table thead th {
+                vertical-align: middle;
+                border-bottom: 2px solid #dee2e6;
+            } */
+                
+    </style>
+            <div class="start"> 
+                <div class="header2">
+                    <div class="inner" style="font-size: 0.75em; padding-top: 10px; color: rgb(134, 134, 138);">홈 > 마이페이지 > 회원정보</div>
+                </div>
+             </div>
+            <div class="inner">
+                <div class="info" style="height: 120px;">
+                    <picture style="float: left;">
+                        <img src="..\common\dog\profile-empty.svg" style="width: 75px; border: 1px solid #cfcfd0; overflow: hidden; border-radius: 50%; background-color: #fff; ;" >
+                    </picture>
+                        <div style="float: left; padding-left: 20px; padding-top: 15px;">
+                            <strong>봉상근</strong> <i class="fas fa-cog"></i>  <div style="color: rgb(138, 138, 146); font-size: 0.9em;">abcd1234@naver.com</div>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-my" id="list-home-list" style="text-decoration:none; border-color: white; color: black; font-weight: bold; font-size:1.3em;">마이페이지</a><hr/>
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" >회원정보</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">주문내역</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">장바구니</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">고객센터</a>
+                    </div>
+                    </div>
+                    <div class="col-10">
+
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                           
+                            <div class="card" style="border: white;">
+
+                                <article class="card-body mx-auto" style="width: 500px;">
+                                    <h4 class="card-title mt-4 mb-4 text-center"><strong>비밀번호 변경</strong></strong></h4>
+                                    </p>
+                                    <form>
+                                    <div style="padding: 5px 0 0 0;">
+                                        <strong>현재 비밀번호</strong><span style="color: red;">*</span>
+                                    </div>
+                                    <div class="form-group input-group">
+                                        <!-- <div class="input-group-prepend">
+                                            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                                         </div> -->
+                                        <input name="" class="form-control" placeholder="현재 비밀번호를 입력하세요." type="text">
+                                    </div> <!-- form-group// -->
+                                    <div style="font:bold;">
+                                        <strong>변경 비밀번호</strong><span style="color: red;">*</span>
+                                    </div>
+                                    <div class="form-group input-group">
+                                        <!-- <div class="input-group-prepend">
+                                            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                                         </div> -->
+                                        <input name="" class="form-control" placeholder="비밀번호를 6자 이상 입력하세요." type="text">
+                                    </div> <!-- form-group// -->
+                                   
+                                    <div style="font:bolder;">
+                                        <strong>변경 비밀번호 확인</strong><span style="color: red;">*</span>
+                                    </div>
+                                    <div class="form-group input-group">
+                                        <!-- <div class="input-group-prepend">
+                                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                                        </div> -->
+                                        <input class="form-control" placeholder="비밀번호를 한번 더 입력해 주세요." type="text">
+                                    </div> <!-- form-group// -->
+                                    
+                                    <div class="text-center" style="text-align: center; font-size: 0.7em;">
+                                        정확한 비밀번호 입력 시 찾기 쉽습니다.
+                                    </div>  
+                                    <div></br></div>
+                                    <div class="form-group" >
+                                        <button type="button" onclick="location.href='my.html' " class="btn btn-primary btn-block" style="background-color : rgb(255, 81, 82); height: 50px ;border-color: rgb(255, 81, 82);"> 확인 </button>
+                                    </div> <!-- form-group// -->      
+                                </form>
+                                </article>
+                            </div>  
+                        </div>
+                        
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">... </div>
+ 
+                    
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div>
+              <br>
+              <br>
+              <br>
+              
+          </div>
+        <footer style="color: #ffffff">
+    <div class="container-fluid" style = "background-color: #FF3357; margin-left : 0px; margin-right : 0px; height:90px">
+        <div class="inner">
+          <div class="row">
+            <div class="col-sm-3">
+                <div class="col-sm-4">
+                    <img src="..\common\dog\dog.png" width="50">
+                </div>
+                <div class="col-6">
+                    <a style="width:400px">DOGSINSA가<br>만들어낸 의류</a>
+                </div>
+            </div>
+            <div class="vl"></div>
+            
+            <div class="col-sm-3">
+                <div class="col-sm-4">
+                    <img src="..\common\dog\dogc.png" width="50">
+                </div>
+                <div class="col-6">
+                  <a>깨끗하고 안전한<br>재질로 만든 옷</a>
+                </div>
+            </div>
+            <div class="vl"></div>
+            
+            <div class="col-sm-3">
+                <div class="col-sm-4">
+                    <img src="..\common\dog\truck.png" width="50">
+                </div>
+                <div class="col-6">
+                  <a style="width: 400px;">저녁 6시 이전<br>주문 시 오늘 출발</a>
+                </div>
+            </div>
+            <div class="vl"></div>
+
+            <div class="col-sm-3">
+                <div class="col-sm-4">
+                    <img src="..\common\dog\hand.png" width="50">
+                </div>
+                <div class="col-6">
+                    <a>3만원 이상 구매시<br>무료배송</a>
+                </div>
+            </div>
+           </div>
+        </div>
+      </div>
+      </div>
+    <div class="footer-container1">
+      <div class="inner">
+        <div class="footer-container1-contents">
+          <div class="footer-container1-text">
+            회사소개 | 입점문의 | 이용약관 | 개인정보처리
+          </div> 
+
+        </div>
+      </div>
+      <hr style="margin:0;"/>
+    </div>
+    <div class="footer-container2">
+      <div class="inner">
+        <div class="footer-container2-contents">
+          <div class="footer-container2-text">
+            <i class="fas fa-headset"></i>
+            010-5319-3079
+          </div> 
+          <div class="footer-logo">
+            <img src="..\common\dog\logo.png" alt="logo">
+          </div>
+          <div class="footer-container2-downtext">
+            <div class="open-time">평일: 09:00 ~ 18:00 / 주말 · 공휴일: 휴무</div>
+            <div class="footer-etc">
+              (주)더존비즈온 | 대표이사: DOGSINSA | 사업자등록번호: 127-8-358</br>
+              개인정보보호책임자: 봉상근 | 주소: 서울시 동작구 상도로</br>
+              팩스: 02-555-5585 | 이메일: nwk12@naver.com
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="margin:0;"/>
+    </div>
+</footer>
+    </body>
+</html>
+</html>
